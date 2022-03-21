@@ -1,27 +1,12 @@
-## drugi
-
+from asyncio.windows_events import NULL
 import numpy as np
 import matplotlib.pyplot as plt
 
-a= []
-for x in range (100):
-    a.append(np.random.randint(1,7))
-    print(a)
-
+dob_broj=[]
+for i in range(0,100):
+    dob_broj.append(np.random.randint(1,7))
+    
+print(dob_broj)
 x = np.linspace(0,7,num=100)
-plt.hist(a,bins= 50,)
+plt.hist(dob_broj,bins= 50,)
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
